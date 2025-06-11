@@ -44,26 +44,26 @@ Func _FindStartAllBack_RegistryKey()
 		EndIf
 		$i += 1
 	WEnd
-	If IsArray($aKeys) And UBound($aKeys) >= 2 Then
+	If IsArray($aKeys) And Ubound($aKeys) >= 1 Then
 		Return $sBaseKey & "\" & $aKeys[1]
 	Else
 		Return SetError(1, 0, "No StartAllBack registry key found.")
 	EndIf
-EndFunc   ;==>_FindStartAllBack_RegistryKey
+EndFunc   ;==>_FindLowercaseRegistryKeys
 
 Func _SelfMove($iDelay = 3)
-	Local $sCmdFile
-	FileDelete(@TempDir & "\scratch.bat")
-	$sCmdFile = 'ping -n ' & $iDelay & ' 127.0.0.1 > nul' & @CRLF _
-			& 'move /Y "' & FileGetShortName(@ScriptFullPath) & '" "' & @ProgramFilesDir & '\StartAllBack\StartAllBack_EternalTrial.exe"' & @CRLF _
-			& 'start "" "' & @ProgramFilesDir & '\StartAllBack\StartAllBack_EternalTrial.exe"'
-	FileWrite(@TempDir & "\scratch.bat", $sCmdFile)
-	Run(@TempDir & "\scratch.bat", @TempDir, @SW_HIDE)
-EndFunc   ;==>_SelfMove
+    Local $sCmdFile
+    FileDelete(@TempDir & "\scratch.bat")
+    $sCmdFile = 'ping -n ' & $iDelay & ' 127.0.0.1 > nul' & @CRLF _
+            & 'move /Y "' & FileGetShortName(@ScriptFullPath) & '" "' & @ProgramFilesDir & '\StartAllBack\StartAllBack_EternalTrial.exe"' & @CRLF _
+            & 'start "" "' & @ProgramFilesDir & '\StartAllBack\StartAllBack_EternalTrial.exe"'
+    FileWrite(@TempDir & "\scratch.bat", $sCmdFile)
+    Run(@TempDir & "\scratch.bat", @TempDir, @SW_HIDE)
+EndFunc
 
 Func _MoveEternalTrial()
 	If @ScriptDir <> @ProgramFilesDir & "\StartAllBack" Then
-		_SelfMove()
-		Exit
-	EndIf
-EndFunc   ;==>_MoveEternalTrial
+	_SelfMove()
+	Exit
+EndIf
+EndFunc
