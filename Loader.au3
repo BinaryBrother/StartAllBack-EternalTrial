@@ -11,6 +11,9 @@
 ; First, we find the key. It will be the only key under CLSID that is all lowercase.
 ; Example $RegKey = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{9fce6b89-ea11-1a21-9bc0-81917c66e2f}
 $RegKey = _FindStartAllBack_RegistryKey()
+If @error Then
+	MsgBox(16, "Eternal Trial", "Failed to find StartAllBack registry key.")
+EndIf
 
 ; Now, we'll delete the key being watched by StartAllBack. When StartIsBackCfg loads, it will recreate this key.
 ; Essentially, resetting the trial by changing the key's modification date.
