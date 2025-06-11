@@ -20,7 +20,7 @@
 _MoveEternalTrial()
 
 ; Make sure that a scheduled task is created to reset the trial.
-$Return = ShellExecuteWait("schtasks", '/create /tn "StartAllBack_EternalTrial" /tr "' & @ProgramFilesDir & "\StartAllBack\StartAllBack_EternalTrial.exe" & '" /sc onlogon /rl highest /f')
+$Return = ShellExecuteWait("schtasks", '/create /tn "StartAllBack_EternalTrial" /tr "' & FileGetShortName(@ProgramFilesDir & "\StartAllBack\StartAllBack_EternalTrial.exe") & '" /sc onlogon /rl highest /f')
 
 ; Then, we find the key. It will be the only key under CLSID that is all lowercase.
 ; Example $RegKey = HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{9fce6b89-ea11-1a21-9bc0-81917c66e2f}
