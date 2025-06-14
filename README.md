@@ -6,11 +6,11 @@ Tested on Windows 24H2 and StartAllBack v3.9.10.
 
 I've actually been testing this vulnerability for several versions of StartAllBack and no changes we're needed in my code.
 
-Try the Enternal Trial on the latest version, first.
+Try the Eternal Trial on the latest version, first.
 
 <b>INSTRUCTIONS:</b><br>
 1.) Download the official release of <a href="https://www.startallback.com/">StartAllBack</a> (Whatever it is at this time) and install it.<br>
-2.) Check out <a href="https://github.com/BinaryBrother/StartAllBack-EternalTrial/releases">Releases</a> page and download the latest release. <strong>StartAllBack_EternalTrial.exe<\strong>
+2.) Check out <a href="https://github.com/BinaryBrother/StartAllBack-EternalTrial/releases">Releases</a> page and download the latest release. <b>StartAllBack_EternalTrial.exe</b>
 
 <b>ISSUES/DOESN'T WORK:</b><br>
 1.) Uninstall StartAllBack.<br>
