@@ -10,7 +10,7 @@ Try the Enternal Trial on the latest version, first.
 
 <b>INSTRUCTIONS:</b><br>
 1.) Download the official release of <a href="https://www.startallback.com/">StartAllBack</a> (Whatever it is at this time) and install it.<br>
-2.) Check out <a href="https://github.com/BinaryBrother/StartAllBack-EternalTrial/releases">Releases</a> page and download the latest release. <b>StartAllBack_EternalTrial.exe<\b>
+2.) Check out <a href="https://github.com/BinaryBrother/StartAllBack-EternalTrial/releases">Releases</a> page and download the latest release. <strong>StartAllBack_EternalTrial.exe<\strong>
 
 <b>ISSUES/DOESN'T WORK:</b><br>
 1.) Uninstall StartAllBack.<br>
