@@ -1,5 +1,9 @@
 This project leverages a simple vulnerability in the way that StartAllBack checks licensing.
 
+The key will be the only key under CLSID that is all lowercase. StartAllBack looks to see how long that key has been active, if you delete it, it recreates the key and restarts the trial.
+
+Example HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{9fce6b89-ea11-1a21-9bc0-81917c66e2f}
+
 Your trial will remain at 100 days, eternally. Check out our <a href="https://github.com/BinaryBrother/StartAllBack-EternalTrial/releases">Releases</a>.
 
 Tested on Windows 24H2 and StartAllBack v3.9.10.
