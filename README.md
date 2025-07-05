@@ -11,4 +11,4 @@
 <p>Last tested StartAllBack version: <strong>v3.9.10</strong> (Current as of writing)</p>
 <p>Last tested OS: <strong>Windows 11 24H2</strong></p>
 <h1><strong>Message to Software Vendors</strong></h1>
-<p>I provide the neccerary information for these vulnerabilities to be patched. True Apps is purely for educational review.</p>
+<p>I provide the neccerary information for these vulnerabilities to be patched. True Apps is purely for educational review. This is why we release FOSS examples, for transparency.</p>
